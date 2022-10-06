@@ -1,58 +1,69 @@
-.topheader{
+.section-header {
     padding-top: 135px;
     padding-bottom: 165px;
-    background-color: #000;
+}
+.section-header .topheader{
+    position:absolute;
     background: url("/assets/img/headers3.jpg") no-repeat;
     background-size: cover;
+    background-position: center;
+    height: 440px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.section-header .topheader .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(19,41,48,.4);
     background-position: center center;  
-    -webkit-filter:opacity(75%);
-    -moz-filter:opacity(75%); 
-    filter:opacity(75%);
     -moz-transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear;
-    text-align: center;
+}
+.section-header .topheader:hover .overlay{
+    background: rgba(19,41,48,0);
+    -moz-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+.section-header .caption {
+    max-width: 560px;
     letter-spacing: 3px;
+    position: relative;
+    margin:0 auto;
+    padding:0;
+    text-align: center;
     text-shadow: 0px 0px 8px #000;
-    color:#fff;
 }
-.topheader::after{
-    background: url("/assets/img/flg.png") no-repeat;
-    position:relative;
-    z-index: 2;
-}
-.topheader p{
+.section-header .caption p{
     font-size: 52px;
     margin-bottom:0;
     margin-top: -10px;
     padding:0;
 }
-.topheader span{
+.section-header .caption span{
     font-size:18px;
     margin:0;
     padding:0;
 }
-.topheader span.arab{
+.section-header .caption span.arab{
     font-family: $font-arab;
     font-size:30px;
     letter-spacing: 0px;
 }
 @media screen and (max-width: 767px) {
-    .topheader p{
+    .section-header .caption p{
         font-size:22px;
     }
-    .topheader span{
+    .section-header .caption span{
         font-size:14px;
     }
-    .topheader span.arab{
+    .section-header .caption span.arab{
         font-size:20px;
     }
-}
-.topheader:hover{
-    -webkit-filter:opacity(100%);
-    -moz-filter:opacity(100%);
-    filter:opacity(100%);
-    -moz-transition: all 0.2s linear;
-    -webkit-transition: all 0.2s linear;
-    transition: all 0.2s linear;
 }

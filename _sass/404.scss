@@ -14,7 +14,13 @@
     align-self: center;
     letter-spacing: 4px;
 }
-.err-404 > div > h1{
+.err-404 > div > h5 > a{
+    text-decoration: none;
+    color: #5b7281;
+}
+.err-404 > div > h5 > a:hover{
+    text-decoration: none;
+    color: #0e83cd;
 }
 .err-404 .someicon{
     font-size:30px; color:#0e83cd;
