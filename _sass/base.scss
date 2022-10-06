@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+$font-roboto: 'Roboto', sans-serif;
+$font-montserrat: 'Montserrat', sans-serif;
+$font-arab: serif;
+
+%font-selected {
+    font-family: $font-montserrat;
+    font-weight: 400;
+}
+
+body{
+    @extend %font-selected;
+}
+
 .headtop{
     background-color: transparent;
     padding-top: 15px;
@@ -161,7 +177,7 @@
     padding:0;
 }
 .topheader span.arab{
-    font-family: sans-serif;
+    font-family: $font-arab;
     font-size:30px;
     letter-spacing: 0px;
 }
@@ -269,7 +285,7 @@
     position: relative;
     content: "";
     z-index: 2;
-    top: 52px;
+    top: 51px;
 }
 .profile-add{
     padding:0;
@@ -296,7 +312,7 @@
     position: relative;
     content: "";
     z-index: 2;
-    top: 69px;
+    top: 68px;
 }
 
 .head-lines{
@@ -350,7 +366,7 @@
     position: relative;
     content: "";
     z-index: 3;
-    top:62px;
+    top:61px;
 }
 .section-2{
     text-align: center;
@@ -376,7 +392,7 @@
     position: relative;
     content: "";
     z-index: 2;
-    top:33px;
+    top:32px;
 }
 .section-2::after{
     width: 0;
@@ -388,7 +404,7 @@
     position: relative;
     content: "";
     z-index: 3;
-    top: 52px;
+    top: 51px;
 }
 .section-4{
     border-top: solid 8px #191919;
@@ -417,7 +433,7 @@
     position: relative;
     content: "";
     z-index: 2;
-    top: 33px;
+    top: 32px;
 }
 .section-4 .mail {
     color: #fff;
