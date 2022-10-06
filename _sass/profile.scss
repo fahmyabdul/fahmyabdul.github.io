@@ -1,0 +1,117 @@
+
+
+.profile-image{
+    width:150px; 
+    height:150px; 
+    border-radius:100%; 
+    border:solid 5px #cecece; 
+    top:-105px; 
+    position:relative; 
+    text-align:center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:0 auto;
+    display:block; 
+    overflow:hidden;
+    z-index: 50;
+    -moz-animation-name : img-effect;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-out;
+    -moz-animation-duration: 0.8s;
+
+    -webkit-animation-name : img-effect;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 0.8s;
+
+    animation-name : img-effect;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 0.8s;
+}
+.profile-image:hover{
+    animation: img-effect 1s;
+}
+@-moz-keyframes img-effect{
+    0%{
+        width:0px;
+        height:0px;
+    }
+    100%{
+        width:150px;
+        height:150px;
+        -moz-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes img-effect{
+    0%{
+        width:0px;
+        height:0px;
+    }
+    100%{
+        width:150px;
+        height:150px;
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes img-effect{
+    0%{
+        width:0px;
+        height:0px;
+    }
+    100%{
+        width:150px;
+        height:150px;
+        transform: rotate(360deg);
+    }
+}
+.profile-spacer{
+     top:-180px; 
+     padding-top:80px;
+     padding-bottom: 10px;
+     position:relative;
+     background-color: #e5e5e5;
+     text-align: center;
+     margin-bottom: -180px;
+     border-top: solid 5px #cecece;
+}
+.profile-spacer::after{
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid #e5e5e5; 
+    -moz-transform: scale(.9999);
+    position: relative;
+    content: "";
+    z-index: 2;
+    top: 61px;
+}
+.profile-add{
+    padding:0;
+    margin:0;
+    margin-bottom: -20px;
+}
+.profile-add > h5{
+    color:#666666;
+    padding:0;
+    margin:0;
+}
+.profile-add > h2{
+    color:#0e83cd;
+}
+.profile-add > h2 > span{
+    color:#666666;
+}
+.profile-add::after{
+    width: 0;
+    height: 0;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-top: 35px solid #1780a9; 
+    -moz-transform: scale(.9999);
+    position: relative;
+    content: "";
+    z-index: 2;
+    top: 78px;
+}
