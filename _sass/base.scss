@@ -19,6 +19,27 @@ body{
     overflow: hidden;
 }
 
+.button-more {
+    color: #1ea4d9;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    -moz-transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+    font-size: 18px;
+    right:0;
+}
+
+.button-more:hover {
+    color: #78c8e8;
+    font-size: 19px;
+    right:0;
+    -moz-transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+
 .imgicn{
     width: 70px;
     height: 70px;
@@ -108,30 +129,4 @@ body{
 .icon span{
     display:table-cell; 
     vertical-align:middle;
-}
-.social-group a {
-    text-decoration: none;
-}
-.social-button{
-    background:#fff; 
-    color:#323232; 
-    height:60px; 
-    line-height: 58px; 
-    width:60px; 
-    display:inline-block; 
-    text-align:center;
-    font-size:35px; 
-    font-weight: bold;
-    transition: 0.4s ease-in;
-    border:solid 2px #fff;
-    border-radius: 100%;
-    margin-left: 3px;
-    margin-right: 3px;
-}
-.social-button:hover{
-    background:transparent; 
-    color:#fff;
-    cursor: pointer;
-    transition: 0.4s ease-in;
-    border:solid 2px #fff;
 }

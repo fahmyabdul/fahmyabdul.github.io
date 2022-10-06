@@ -5,8 +5,11 @@
     color: #fff;
     text-align: center;
     border-top: solid 8px #1780a9;
-    border-bottom: solid 8px #cecece;
+    border-bottom: solid 8px #e5e5e5;
     padding-top:30px; padding-bottom:10px;
+}
+.section-1 .section-title{
+    text-align: left;
 }
 .section-1 p{
     text-align: justify;
@@ -24,6 +27,7 @@
     top:61px;
 }
 .section-2{
+    background-color: #fdfcf9;
     text-align: center;
 }
 .section-2 .section-title{
@@ -42,38 +46,38 @@
     height: 0;
     border-left: 35px solid transparent;
     border-right: 35px solid transparent;
-    border-top: 35px solid #cecece; 
+    border-top: 35px solid #e5e5e5; 
     -moz-transform: scale(.9999);
     position: relative;
     content: "";
     z-index: 2;
     top:32px;
 }
-.section-2::after{
-    width: 0;
-    height: 0;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-top: 30px solid #ffffff; 
-    -moz-transform: scale(.9999);
-    position: relative;
-    content: "";
-    z-index: 3;
-    top: 51px;
+.section-2 .section-title{
+    color:#1ea4d9;
 }
+// .section-2::after{
+//     width: 0;
+//     height: 0;
+//     border-left: 30px solid transparent;
+//     border-right: 30px solid transparent;
+//     border-top: 30px solid #ffffff; 
+//     -moz-transform: scale(.9999);
+//     position: relative;
+//     content: "";
+//     z-index: 3;
+//     top: 51px;
+// }
 .section-4{
     border-top: solid 8px #191919;
-    background-color:#323232;
     font-size: 16px;
     text-align: center;
 }
 .section-4 p{
     text-align: justify;
-    color: #fff;
 }
 .section-4 h1{
     text-align: center;
-    color: #fff;
 }
 .section-4 .head-lines::after{
     background:#1ea4d9;
