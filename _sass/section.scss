@@ -57,6 +57,47 @@
 .section-2 .section-title{
     color:#1ea4d9;
 }
+
+#skills .sketch {
+    bottom:0; 
+    left:5%; 
+    position: absolute;
+}
+@media screen and (min-width: 576px) {
+    #skills .sketch {
+        bottom:0; 
+        left:-120px; 
+        position: absolute;
+    }
+}
+@media screen and (min-width: 768px) {
+    #skills .sketch {
+        bottom:0; 
+        left:-220px; 
+        position: absolute;
+    }
+}
+@media screen and (min-width: 992px) {
+    #skills .sketch {
+        bottom:0; 
+        left:-120px; 
+        position: absolute;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #skills .sketch {
+        bottom:0; 
+        left:2%; 
+        position: absolute;
+    }
+}
+@media screen and (min-width: 1400px) {
+    #skills .sketch {
+        bottom:0; 
+        left:5%; 
+        position: absolute;
+    }
+}
 // .section-2::after{
 //     width: 0;
 //     height: 0;
