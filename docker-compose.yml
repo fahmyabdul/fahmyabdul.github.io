@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  fahmyabdul.github.io:
+    container_name: fahmyabdul.github.io
+    image: fahmyabdulgithubio:latest
+    restart: always
+    privileged: true
+    ports:
+      - '4000:4000'
