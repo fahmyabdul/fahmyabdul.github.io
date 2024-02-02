@@ -1,11 +1,11 @@
 
 
 .profile-image{
-    width:150px; 
-    height:150px; 
+    width:200px; 
+    height:200px; 
     border-radius:100%; 
     border:solid 5px #cecece; 
-    top:-105px; 
+    top:-100px; 
     position:relative; 
     text-align:center; 
     background-size: cover;
@@ -38,8 +38,8 @@
         height:0px;
     }
     100%{
-        width:150px;
-        height:150px;
+        width:200px;
+        height:200px;
         -moz-transform: rotate(360deg);
     }
 }
@@ -49,8 +49,8 @@
         height:0px;
     }
     100%{
-        width:150px;
-        height:150px;
+        width:200px;
+        height:200px;
         -webkit-transform: rotate(360deg);
     }
 }
@@ -60,19 +60,19 @@
         height:0px;
     }
     100%{
-        width:150px;
-        height:150px;
+        width:200px;
+        height:200px;
         transform: rotate(360deg);
     }
 }
 .profile-spacer{
-     top:-180px; 
-     padding-top:80px;
+     top:-200px; 
+     padding-top:86px;
      padding-bottom: 10px;
      position:relative;
      background-color: #e5e5e5;
      text-align: center;
-     margin-bottom: -180px;
+     margin-bottom: -200px;
      border-top: solid 5px #cecece;
 }
 .profile-spacer::after{
@@ -91,6 +91,7 @@
     padding:0;
     margin:0;
     margin-bottom: -20px;
+    padding-top:20px;
 }
 .profile-add > h5{
     color:#666666;
@@ -138,4 +139,55 @@
     color:#ffffff;
     cursor: pointer;
     transition: 0.1s ease-in;
+}
+
+@media screen and (max-width: 767px) {
+    .profile-image {
+        width:100px; 
+        height:100px; 
+        top:-145px; 
+    }
+    .profile-spacer{
+         top:-200px; 
+         padding-top:86px;
+         padding-bottom: 10px;
+         margin-bottom: -200px;
+    }
+    .profile-add{
+        margin-top:-40px;
+    }
+
+    @-moz-keyframes img-effect{
+        0%{
+            width:0px;
+            height:0px;
+        }
+        100%{
+            width:100px;
+            height:100px;
+            -moz-transform: rotate(360deg);
+        }
+    }
+    @-webkit-keyframes img-effect{
+        0%{
+            width:0px;
+            height:0px;
+        }
+        100%{
+            width:100px;
+            height:100px;
+            -webkit-transform: rotate(360deg);
+        }
+    }
+    @keyframes img-effect{
+        0%{
+            width:0px;
+            height:0px;
+        }
+        100%{
+            width:100px;
+            height:100px;
+            transform: rotate(360deg);
+        }
+    }
 }

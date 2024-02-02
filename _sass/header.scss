@@ -1,6 +1,6 @@
 .section-header {
     padding-top: 135px;
-    padding-bottom: 165px;
+    padding-bottom: 115px;
 }
 .section-header .topheader{
     position:absolute;
@@ -57,6 +57,15 @@
     letter-spacing: 0px;
 }
 @media screen and (max-width: 767px) {
+    .section-header {
+        padding-top: 65px;
+        padding-bottom: 165px;
+    }
+
+    .section-header .topheader {
+        height: 220px;
+    }
+
     .section-header .caption p{
         font-size:22px;
     }

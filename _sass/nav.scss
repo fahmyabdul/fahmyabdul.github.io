@@ -1,3 +1,21 @@
+.imgicn{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    -webkit-filter:grayscale(0%);
+    -moz-filter:grayscale(0%); 
+    filter:grayscale(0%);
+    -moz-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    animation-name: imgeff;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+}
+@keyframes imgeff{
+    0%{ box-shadow:0 0 0 0 #0079ff; }
+    100%{ box-shadow:0 0 0 7px rgba(255,150,44,0); }
+}
 
 
 .headtop{
@@ -47,4 +65,11 @@
     -moz-transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear;
+}
+
+@media screen and (max-width: 767px) {
+    .imgicn {
+        width: 40px;
+        height: 40px;
+    }
 }

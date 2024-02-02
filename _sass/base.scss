@@ -19,6 +19,32 @@ body{
     overflow: hidden;
 }
 
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    h2{
+        font-size: 19px;
+    }
+
+    h5{
+        font-size: 16px;
+    }
+
+    .section-1 p {
+        font-size:15px;
+    }
+
+    td {
+        font-size: 15px;
+    }
+    
+    span {
+        font-size: 15px;
+    }
+}
+
 .button-more {
     color: #1ea4d9;
     text-decoration: none;
@@ -38,25 +64,6 @@ body{
     -moz-transition: all 0.1s linear;
     -webkit-transition: all 0.1s linear;
     transition: all 0.1s linear;
-}
-
-.imgicn{
-    width: 70px;
-    height: 70px;
-    border-radius: 100%;
-    -webkit-filter:grayscale(0%);
-    -moz-filter:grayscale(0%); 
-    filter:grayscale(0%);
-    -moz-transition: all 0.2s linear;
-    -webkit-transition: all 0.2s linear;
-    transition: all 0.2s linear;
-    animation-name: imgeff;
-    animation-iteration-count: infinite;
-    animation-duration: 1.5s;
-}
-@keyframes imgeff{
-    0%{ box-shadow:0 0 0 0 #0079ff; }
-    100%{ box-shadow:0 0 0 7px rgba(255,150,44,0); }
 }
 
 .image-blur{
